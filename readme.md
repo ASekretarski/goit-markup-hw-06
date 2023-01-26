@@ -1,1 +1,1 @@
-https://asekretarski.github.io/goit-markup-hw-05/
+https://asekretarski.github.io/goit-markup-hw-06/

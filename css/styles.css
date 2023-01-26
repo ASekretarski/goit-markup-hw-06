@@ -660,4 +660,26 @@ border-radius: 4px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.request-form .flex {
+    flex-direction: column;
+    gap: 10px;
+}
 
+.request-form {
+    padding: 40px;
+}
+
+.request-input {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.request-form .heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.request-form-label {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+}

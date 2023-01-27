@@ -313,6 +313,33 @@
             ></a>
           </div>
         </div>
+        <div class="newsletter">
+          <form class="form flex" name="newsletterForm" autocomplete="on">
+            <div class="heading">
+              <label class="newsletter-label" for="newsletterEmail">
+                ZAPISZ SIĘ DO NEWSLETTERA
+              </label>
+            </div>
+
+            <div class="form-input flex">
+              <input
+                class="newsletter-input"
+                type="email"
+                name="email"
+                id="newsletterEmail"
+                required
+                autocomplete="on"
+                placeholder="E-mail"
+              />
+              <button class="button flex" type="sumbit">
+                <div>Zapisz się</div>
+                <svg class="icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

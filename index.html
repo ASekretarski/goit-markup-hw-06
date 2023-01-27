@@ -431,6 +431,9 @@
                 name="userName"
                 required
               />
+              <svg class="request-form__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </label>
             <label class="request-form__label">
               Telefon
@@ -440,6 +443,9 @@
                 name="userPhoneNumber"
                 required
               />
+              <svg class="request-form__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </label>
             <label class="request-form__label">
               Email
@@ -449,6 +455,9 @@
                 name="userEmail"
                 required
               />
+              <svg class="request-form__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </label>
             <label class="request-form__label">
               Komentarz
@@ -463,15 +472,27 @@
             </label>
             <label class="request-form__terms-label">
               <input
-                class="request-form__terms-acceptance-input"
+                class="request-form__terms-input"
                 type="checkbox"
                 name="termsAccepted"
                 value="true"
                 required
               />
-              Oświadczam iż akceptuję <a href="">Regulamin</a> i
-              <a href="">Politykę Prywatności</a></label
-            >
+
+              <svg class="request-form__icon-check" width="11px" height="8px">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <svg
+                class="request-form__icon-not-check"
+                width="16px"
+                height="15px"
+              >
+                <use href="./images/icons.svg#icon-not-check"></use>
+              </svg>
+              Oświadczam iż akceptuję
+              <a class="request-form__link" href="">Regulamin</a> i
+              <a class="request-form__link" href="">Politykę Prywatności.</a>
+            </label>
           </div>
           <button class="button" type="submit">Wyślij</button>
         </form>

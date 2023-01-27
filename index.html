@@ -420,12 +420,58 @@
 
         <form class="request-form" name="userRequestForm" autocomplete="on">
           <div class="flex" role="group" aria-labelledby="user-request-form">
-            <p id="user-request-form" class="heading">Zostaw swoje dane w formularzu poniżej</p>
-            <label class="request-form-label">Imię<input class="request-input" type="text" name="userName" /></label>
-            <label class="request-form-label">Telefon<input class="request-input" type="tel" name="userPhoneNumber" /></label>
-            <label class="request-form-label">Email<input class="request-input" type="email" name="userEmail" /></label>
-            <label class="request-form-label">Komentarz<textarea class="request-input" name="userRequest" /></textarea></label>
-            <label class="terms-acceptance-label">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a><input class="request-input" type="checkbox" name="termsAccepted" value="true"/></label>
+            <p id="user-request-form" class="request-form__heading">
+              Zostaw swoje dane w formularzu poniżej
+            </p>
+            <label class="request-form__label">
+              Imię
+              <input
+                class="request-form__data-input"
+                type="text"
+                name="userName"
+                required
+              />
+            </label>
+            <label class="request-form__label">
+              Telefon
+              <input
+                class="request-form__data-input"
+                type="tel"
+                name="userPhoneNumber"
+                required
+              />
+            </label>
+            <label class="request-form__label">
+              Email
+              <input
+                class="request-form__data-input"
+                type="email"
+                name="userEmail"
+                required
+              />
+            </label>
+            <label class="request-form__label">
+              Komentarz
+              <textarea
+                class="request-form__comment-input"
+                name="userRequest"
+                rows="6"
+                placeholder="Wprowadź tekst"
+                required
+                minlength="5"
+              ></textarea>
+            </label>
+            <label class="request-form__terms-label">
+              <input
+                class="request-form__terms-acceptance-input"
+                type="checkbox"
+                name="termsAccepted"
+                value="true"
+                required
+              />
+              Oświadczam iż akceptuję <a href="">Regulamin</a> i
+              <a href="">Politykę Prywatności</a></label
+            >
           </div>
           <button class="button" type="submit">Wyślij</button>
         </form>

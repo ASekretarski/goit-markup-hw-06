@@ -1,6 +1,8 @@
 :root {
     --primary-text-color: #212121;
+    --primary-text-color-op20:rgba(33, 33, 33, 0.2);
     --secondary-text-color: #757575;
+    --secondary-text-color-op50: rgba(117, 117, 117, 0.5);
     --tertiary-text-color: #ffffff;
     --primary-brand-color: #2196F3;
     --secondary-brand-color: #F5F4FA;
@@ -665,17 +667,39 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 40px;
 }
 
-.request-input {
+.request-form__data-input,
+.request-form__comment-input {
     width: 100%;
     margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    border-radius: 4px;
+    border-color: var(--primary-text-color-op20);
+    border-width: 1px;
 }
 
-.request-form .heading {
+.request-form__comment-input {
+    padding: 12px 16px 12px 16px;
+
+}
+
+.request-form__data-input {
+    padding: 12px 16px 12px 42px;
+
+}
+
+.request-form__comment-input::placeholder {
+    color: var(--secondary-text-color-op50);
+}
+.request-form__heading {
     font-size: 20px;
     font-weight: 700;
 }
 
-.request-form-label {
+.request-form__label {
     color: var(--secondary-text-color);
     font-size: 12px;
 }
+
+
+
